@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pascal Travel & Documentation Services</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome for Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+body {margin:0;font-family:'Roboto',sans-serif;color:#333;line-height:1.6;}
+a{text-decoration:none;color:inherit;}
+button{cursor:pointer;}
+
+/* Hero Section */
+header{height:100vh;background:url('https://images.unsplash.com/photo-1593642632823-8f785ba67e45?auto=format&fit=crop&w=1650&q=80') center/cover no-repeat;display:flex;flex-direction:column;justify-content:center;align-items:center;color:#fff;text-align:center;padding:0 20px;position:relative;}
+header::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);z-index:1;}
+header div{position:relative;z-index:2;}
+header h1{font-size:3rem;margin-bottom:20px;}
+header p{font-size:1.2rem;margin-bottom:30px;}
+header button{background:#ffba08;border:none;padding:15px 30px;font-size:1rem;border-radius:5px;transition:0.3s;}
+header button:hover{background:#e0a004;}
+
+/* Sections */
+section{padding:80px 20px;max-width:1000px;margin:auto;}
+section h2{font-size:2rem;color:#1e3c72;margin-bottom:20px;text-align:center;}
+section p{text-align:center;margin-bottom:40px;}
+
+/* Services */
+.services{display:flex;flex-wrap:wrap;justify-content:space-around;}
+.service{flex:1 1 250px;margin:10px;padding:20px;border-radius:8px;text-align:center;background:#f4f4f4;transition:0.3s;}
+.service img{width:80px;border-radius:10px;margin-bottom:10px;}
+.service h3{margin-bottom:15px;color:#2a5298;}
+.service:hover{transform:translateY(-5px);box-shadow:0 5px 15px rgba(0,0,0,0.2);}
+
+/* Why Choose Us */
+.features{display:flex;flex-wrap:wrap;justify-content:space-around;gap:20px;}
+.feature{flex:1 1 200px;text-align:center;background:#fffae6;padding:20px;border-radius:8px;font-weight:bold;}
+
+/* Testimonials */
+#testimonials{background:url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1650&q=80') center/cover no-repeat;color:#fff;padding:80px 20px;border-radius:10px;}
+.testimonial{background:rgba(0,0,0,0.6);padding:20px;border-radius:10px;margin-bottom:20px;font-style:italic;text-align:center;}
+
+/* Contact */
+form{max-width:500px;margin:auto;display:flex;flex-direction:column;gap:15px;}
+input,textarea{padding:10px;border-radius:5px;border:1px solid #ccc;font-size:1rem;width:100%;}
+button[type="submit"]{background:#1e3c72;color:#fff;border:none;padding:15px;border-radius:5px;font-size:1rem;}
+button[type="submit"]:hover{background:#2a5298;}
+
+/* Footer */
+footer{background:#1e3c72;color:#fff;text-align:center;padding:20px;}
+
+/* WhatsApp Floating Button */
+.whatsapp-btn{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;border-radius:50%;width:60px;height:60px;display:flex;justify-content:center;align-items:center;font-size:2rem;box-shadow:0 5px 15px rgba(0,0,0,0.3);z-index:1000;transition:0.3s;}
+.whatsapp-btn:hover{transform:scale(1.1);}
+
+/* Contact Section Flex */
+#contact .contact-flex{display:flex;flex-wrap:wrap;justify-content:center;gap:20px;align-items:center;}
+#contact .contact-flex img{width:300px;border-radius:10px;}
+#contact .contact-flex form{flex:1;min-width:250px;}
+
+/* Responsive */
+@media(max-width:768px){header h1{font-size:2.2rem;}.services,.features,#contact .contact-flex{flex-direction:column;align-items:center;}}
+</style>
+</head>
+<body>
+
+<!-- Hero -->
+<header>
+    <div>
+        <h1>Your Trusted Partner for Travel & Documentation Services</h1>
+        <p>We make getting visas, Ghana Cards, and other essential travel documents simple, fast, and stress-free.</p>
+        <button onclick="document.getElementById('contact').scrollIntoView({ behavior:'smooth' })">Get Started Today</button>
+    </div>
+</header>
+
+<!-- About -->
+<section id="about">
+    <h2>About Us</h2>
+    <p>Pascal Travel & Documentation Services is dedicated to helping individuals navigate travel and documentation requirements smoothly. With years of experience and a professional approach, we provide guidance and support from application to approval, ensuring peace of mind for all our clients.</p>
+</section>
+
+<!-- Services -->
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+        <div class="service">
+            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=400&q=80" alt="Visa">
+            <h3>Visa Application Assistance</h3>
+            <p>We guide you through the visa application process for any country, ensuring your documents are complete and submitted correctly.</p>
+        </div>
+        <div class="service">
+            <img src="https://images.unsplash.com/photo-1581090700227-9c9b8b55a1e2?auto=format&fit=crop&w=400&q=80" alt="Ghana Card">
+            <h3>Ghana Card Registration</h3>
+            <p>Fast, secure, and hassle-free processing of your Ghana Card applications with professional support every step of the way.</p>
+        </div>
+        <div class="service">
+            <img src="https://images.unsplash.com/photo-1598970434795-0c54fe7c0642?auto=format&fit=crop&w=400&q=80" alt="Documents">
+            <h3>Other Travel Documents</h3>
+            <p>From passports to official letters, we assist with all necessary travel and identification documents to make your journey easier.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Why Choose Us -->
+<section id="why">
+    <h2>Why Choose Us</h2>
+    <div class="features">
+        <div class="feature">Reliable & Fast Service</div>
+        <div class="feature">Professional Guidance</div>
+        <div class="feature">Transparent Pricing</div>
+        <div class="feature">Personalized Support</div>
+    </div>
+</section>
+
+<!-- Testimonials -->
+<section id="testimonials">
+    <h2>Testimonials</h2>
+    <div class="testimonial">“Pascal Travel helped me get my visa in just 2 weeks! Highly recommended.” – Ama K.</div>
+    <div class="testimonial">“Excellent service for my Ghana Card registration – smooth and stress-free.” – Kwame T.</div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+    <h2>Start Your Application Today!</h2>
+    <div class="contact-flex">
+        <img src="https://images.unsplash.com/photo-1521790362606-4e1cf6f3d3e0?auto=format&fit=crop&w=400&q=80" alt="Contact">
+        <form onsubmit="submitForm(event)">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="tel" name="phone" placeholder="Your Phone" required>
+            <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2025 Pascal Travel & Documentation Services | All Rights Reserved</p>
+</footer>
+
+<!-- WhatsApp -->
+<a href="https://wa.me/595046967" target="_blank" class="whatsapp-btn"><i class="fa-brands fa-whatsapp"></i></a>
+
+<script>
+function submitForm(event){
+    event.preventDefault();
+    alert('Thank you for contacting us! We will get back to you soon.');
+    event.target.reset();
+}
+</script>
+
+</body>
+</html>
